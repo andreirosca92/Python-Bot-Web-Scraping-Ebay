@@ -15,8 +15,8 @@ div_list=soup.find_all('div', class_="s-item__image-wrapper image-treatment")
 
 src_image=[]
 # image = div_list.find('img')
-for lista_div in div_list:
-    src_image.append(str(lista_div.find('img').attrs['src']))
+for list_div in div_list:
+    src_image.append(str(list_div.find('img').attrs['src']))
 pprint(src_image)
 
 div_list_price = soup.find_all('span', class_="s-item__price")
